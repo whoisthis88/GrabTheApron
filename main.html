@@ -10,8 +10,26 @@
 </head>
 <body>
   <h1>Grab The Apron</h1>
-  <h1>Page title22</h1>
-  <h2>Smaller</h2>
-  <h3>Smalllller</h3>
+  <div class="tab">
+  <button class="tablinks" onclick="openTab(event, 'Home')">Home</button>
+  <button class="tablinks" onclick="openTab(event, 'Recipes')">Recipes</button>
+  <button class="tablinks" onclick="openTab(event, 'About')">About</button>
+</div>
+
+<!-- Tab content -->
+<div id="Home" class="tabcontent">
+  <h3>Home</h3>
+  <p>This is the Home Page</p>
+</div>
+
+<div id="Recipes" class="tabcontent">
+  <h3>Recipes</h3>
+  <p>This is the Recipes Page</p>
+</div>
+
+<div id="About" class="tabcontent">
+  <h3>About</h3>
+  <p>This is the About Page</p>
+</div>
 </body>
 </html>
