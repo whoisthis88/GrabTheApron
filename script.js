@@ -1,20 +1,19 @@
-// function openTab(evt, tabName) {
-//   // Declare all variables
-//   var i, tabcontent, tablinks;
-//
-//   // Get all elements with class="tabcontent" and hide them
-//   tabcontent = document.getElementsByClassName("tabcontent");
-//   for (i = 0; i < tabcontent.length; i++) {
-//     tabcontent[i].style.display = "none";
-//   }
-//
-//   // Get all elements with class="tablinks" and remove the class "active"
-//   tablinks = document.getElementsByClassName("tablinks");
-//   for (i = 0; i < tablinks.length; i++) {
-//     tablinks[i].className = tablinks[i].className.replace(" active", "");
-//   }
-//
-//   // Show the current tab, and add an "active" class to the button that opened the tab
-//   document.getElementById(tabName).style.display = "block";
-//   evt.currentTarget.className += " active";
-// }
+// Wait for the DOM to be fully loaded before executing any code
+document.addEventListener("DOMContentLoaded", function() {
+    // Get the "View Recipe" button and the additional details section
+    const viewRecipeButton = document.querySelector('.recipe-button');
+    const additionalDetails = document.querySelector('.additional-details');
+
+    // Add a click event listener to the button
+    viewRecipeButton.addEventListener('click', function(event) {
+        // Prevent the default behavior of the link (in this case, navigating to a different page)
+        event.preventDefault();
+        
+        // Toggle the visibility of the additional details section
+        if (additionalDetails.style.display === 'none' || additionalDetails.style.display === '') {
+            additionalDetails.style.display = 'block';
+        } else {
+            additionalDetails.style.display = 'none';
+        }
+    });
+});
