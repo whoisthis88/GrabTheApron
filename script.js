@@ -17,3 +17,18 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+// Assuming you have loaded the JSON data into a variable named 'recipesData'
+
+const main = document.querySelector('main');
+
+// Loop through the recipesData and create recipe cards
+recipesData.forEach(recipe => {
+    const recipeCard = document.createElement('div');
+    recipeCard.classList.add('recipe-card');
+
+    // Create other elements for the recipe card (image, title, description, button, etc.)
+    // Append these elements to the recipeCard div
+
+    main.appendChild(recipeCard); // Append the recipe card to the main section
+});
