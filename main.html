@@ -4,23 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Materialize CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <!-- Materialize JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <link rel="stylesheet" href="styles.css">
     <title>Recipe Websitey</title>
 </head>
 
 <body>
-    <header>
+    <header class="blue lighten-2 white-text">
         <!-- Header content goes here -->
-        <h1>Recipe Websitey</h1>
+        <h1 class="center-align">Grab The Apron</h1>
+        <img src="Apron.jpg" alt ="Apron Image" class="logo">
     </header>
 
-    <nav>
-        <!-- Navigation bar content goes here -->
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Recipes</a></li>
-            <!-- Add more navigation items as needed -->
-        </ul>
+    <nav class="blue">
+        <div class="nav-wrapper">
+            <!-- Navigation bar content goes here -->
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Recipes</a></li>
+                <!-- Add more navigation items as needed -->
+            </ul>
+        </div>
     </nav>
 
     <main>
@@ -41,9 +48,11 @@
         <!-- Add more recipe cards dynamically here -->
     </main>
 
-    <footer>
+    <footer class="blue lighten-2 white-text">
         <!-- Footer content goes here -->
-        <p>&copy; 2023 Recipe Websitey. All rights reserved.</p>
+        <div class="container center-align">
+            <p>&copy; 2023 Recipe Websitey. All rights reserved.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
